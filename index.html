@@ -28,7 +28,7 @@
   <body>
     <a-scene>
       <a-assets>
-        <img id="Pemandangan" crossorigin="anonymous" src="Gambar_1.jpg">
+        <img id="city" crossorigin="anonymous" src="Gambar_1.jpg">
         <img id="city-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
         <img id="Jalan-thumb" crossorigin="anonymous" src="Gambar_2.jpg">
         <img id="Pantai-thumb" crossorigin="anonymous" src="Gambar_3.jpg">
@@ -38,13 +38,13 @@
       </a-assets>
 
       <!-- 360-degree image. -->
-      <a-sky id="image-360" radius="10" src="#Pemandangan"
+      <a-sky id="image-360" radius="10" src="#city"
              animation__fade="property: components.material.material.color; type: color; from: #FFF; to: #000; dur: 300; startEvents: fade"
              animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade"></a-sky>
 
       <!-- Image links. -->
       <a-entity id="links" layout="type: line; margin: 1.5" position="-1.5 -1 -4">
-        <a-entity template="src: #link" data-src="#Pemandangan" data-thumb="#Pemandangan-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#city" data-thumb="#city-thumb"></a-entity>
         <a-entity template="src: #link" data-src="#Jalan" data-thumb="#Jalan-thumb"></a-entity>
         <a-entity template="src: #link" data-src="#Pantai" data-thumb="#Pantai-thumb"></a-entity>
       </a-entity>
